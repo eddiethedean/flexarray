@@ -53,8 +53,9 @@ class FlexArray:
     def __contains__(self, value) -> bool:
         return value in self._array
 
-    def __iadd__(self, value):
-        self.append(value)
+    def __iadd__(self, value) -> FlexArray:
+        self.extend(value)
+        return self
 
     def _append_item(self, value) -> None:
         values = list(self._array) + [value]
