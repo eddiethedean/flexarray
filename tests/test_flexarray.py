@@ -8,7 +8,7 @@ class TestFlexArray(unittest.TestCase):
         # define int FlexArray
         int_array = FlexArray([1, 2, 3, 4, 5])
         # check type is int
-        self.assertEqual(int_array.type, 'i')
+        self.assertEqual(int_array.type, 'B')
         # append float
         int_array.append(1.5)
         # chekc type is float
